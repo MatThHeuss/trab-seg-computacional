@@ -39,10 +39,10 @@ def sizeKey(cipher):
             if _range[i] % k == 0:
                 frequency[k - 2] += 1
 
-    print("\nAnalyze possible key sizes by frequency and choose a possible key size:\n")
+    print("\nAnalise possíveis tamanhos de chave por frequência e escolha um possível tamanho de chave: \n")
     for i in range(10):
-        print("Possible key size: ", i + 2, " = ", frequency[i])
-    s = int(input("\nEnter key size: "))
+        print("Tamanhos possíveis da chave: ", i + 2, " = ", frequency[i])
+    s = int(input("\n Digite o tamanho da chave: "))
 
     return s
 
