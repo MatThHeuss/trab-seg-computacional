@@ -33,8 +33,8 @@ def menu():
             key = attack(cipher, sizeKey(cipher), language)
             key = checkKey(cipher, key)
             message = decrypt(cipher, key)
-            print("\nMessage: " + message)
-            input("\nPRESS ENTER TO CONTINUE")
+            print("\n Mensagem: " + message)
+            input("\n Pressione ENTER para continuar")
         else:
             return False
 
