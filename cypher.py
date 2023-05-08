@@ -1,3 +1,5 @@
+##recebe uma mensagem e uma chave e retorna a chave com tamanho igual ou superior à mensagem. 
+#Caso a chave seja menor que a mensagem, a função repete a chave até que ela tenha o mesmo tamanho da mensagem.
 def checkKey(message: str, key: str):
     sizeMessage = len(message)
     sizeKey = len(key)
@@ -11,7 +13,8 @@ def checkKey(message: str, key: str):
 
         return key
 
-
+#recebe uma mensagem e uma chave e retorna a mensagem criptografada usando a cifra de Vigenère. 
+# A função itera sobre cada letra da mensagem e da chave, desloca a letra da mensagem pelo valor correspondente na letra da chave e adiciona a letra criptografada ao resultado final.
 def encrypt(message, key):
     sizeMessage = len(message)
     j = 0
@@ -28,7 +31,8 @@ def encrypt(message, key):
 
     return cipher
 
-
+#recebe uma mensagem criptografada e a chave correspondente e retorna a mensagem original descriptografada. 
+# A função faz o processo inverso da função encrypt, deslocando cada letra da mensagem criptografada pela letra correspondente da chave.
 def decrypt(cipher: str, key: str) -> str:
     sizeCipher = len(cipher)
     j = 0
